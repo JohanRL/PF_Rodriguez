@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pages {
+    text-decoration: none;
+    color: white;
+}
+
+.pages:hover {
+    text-decoration: underline;
+}
+
+.estilo_header {
+    background-color: black;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.size_header {
+    width: 60%;
+    height: auto;
+}
+
+.estilo_textnavegador {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.estilo_footer {
+    background-color: #ff6f2f;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ubicacion {
+    padding: 20px;
+}
+
+.background_presentacion {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: black;
+    padding: 10px;
+    height: 40vh;
+}
+
+.background_servicios {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    height: 60vh;
+}
+
+.texto_servicios {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+
+.size_imagesvert {
+    width: 17%;
+    height: 80%;
+}
+
+.size_imageshori {
+    width: 35%;
+    height: 80%;
+}
+
+.alineacion_central {
+    text-align: center;
+}
+
+.texto_articulos {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.texto_acerca {
+    background-color: darkgray;
+    color: black;
+    font-style: italic;
+    padding-bottom: 2px;
+}
+
+.contenedor_pie {
+    display: flex;
+    align-items: center; 
+}
+
+.texto_pie {
+    padding-left: 50px;
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    padding: 2px;
+    background-color: #78787c;
+}
+
+.iconos_footer {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.size_iconfoot {
+    height: 80%;
+    width: 80%;
+}
+
+#wp_icon {
+    height: 60%;
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#size_imageautor {
+    width: 25%;
+    height: auto;
+}
+
+.form_align {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.size_form {
+    width: 50%;
+    height: auto;
+}
+
+#sizebackground_fill {
+    height: 80vh;
+}
+
+.background_portafolio {
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+.aside_precios {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#boton_servicios {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    padding-top: 100px;
+}
+
+.background_testimonios {
+    background-color: black;
+    padding: 50px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
