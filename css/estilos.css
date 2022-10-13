@@ -6,14 +6,17 @@
 .pages {
     text-decoration: none;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .pages:hover {
     text-decoration: underline;
+    color: #ff6f2f;
 }
 
 .estilo_header {
-    background-color: black;
+    background: linear-gradient(0deg, black, #78787c);
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -25,18 +28,16 @@
 }
 
 .estilo_textnavegador {
-    display: flex;
-    justify-content: center;
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2vw;
     padding: 5px;
 }
 
 .estilo_footer {
-    background-color: #ff6f2f;
-    color: black;
+    background: linear-gradient(180deg, black, #ff6f2f);
+    color: gainsboro;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -46,12 +47,13 @@
 
 .background_presentacion {
     display: flex;
-    align-content: space-around;
     flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: center;
     background-color: black;
-    padding: 10px;
-    height: 40vh;
+    padding-top: 10px;
+    height: 100%;
+    color: darkgray;
 }
 
 .background_servicios {
@@ -66,6 +68,7 @@
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 5px;
+    
 }
 
 .size_imagesvert {
@@ -83,18 +86,19 @@
 }
 
 .texto_articulos {
-    color: white;
+    color: darkgray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 5px;
     display: flex;
     justify-content: center;
+    font-size: 2vw;
 }
 
 .texto_acerca {
-    background-color: darkgray;
-    color: black;
+    background-color: black;
+    color: darkgray;
     font-style: italic;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
 .contenedor_pie {
@@ -104,13 +108,14 @@
 
 .texto_pie {
     padding-left: 50px;
+    padding-top: 50px;
 }
 
-h1 {
-    color: black;
+h2 {
+    color: darkgray;
     font-weight: bold;
-    padding: 2px;
-    background-color: #78787c;
+    padding: 5px;
+    background-color: black;
 }
 
 .iconos_footer {
@@ -149,7 +154,7 @@ h1 {
 }
 
 #sizebackground_fill {
-    height: 80vh;
+    height: 70vh;
 }
 
 .background_portafolio {
@@ -165,14 +170,14 @@ h1 {
     justify-content: flex-end;
 }
 
-#boton_servicios {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black;
-    padding-top: 100px;
+.boton_servicios {
+    color: white;
+    text-decoration: none;
+}
+
+.boton_servicios:hover {
+    text-decoration: underline;
+    color: #ff6f2f;
 }
 
 .background_testimonios {
@@ -183,4 +188,51 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.parrafoscuro {
+    color: black;
+}
+
+.parrafoclaro {
+    color: white;
+}
+
+.ancho_contenedor { 
+    max-width: 1650px;
+}
+
+@media only screen and (max-width:480px) {
+    .estilo_textnavegador {
+        
+        background-color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 2vw;
+        padding: 5px;
+    }
+    .texto_acerca {
+        background-color: black;
+        color: darkgray;
+        font-style: italic;
+        padding-bottom: 5px;
+        font-size: 3vw;
+    }
+    .estilo_footer {
+        background: linear-gradient(180deg, black, #ff6f2f);
+        color: gainsboro;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2vw;
+    }
+}
+
+.gridpie {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.gridnav {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 100%;
 }

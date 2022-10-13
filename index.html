@@ -10,8 +10,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/icono/favicon-16x16.png">
     <link rel="manifest" href="images/icono/site.webmanifest">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <header>
         <a href="index.html" class="estilo_header">
             <img src="images/Logo blanco recortado.png" alt="Logoblanco" class="size_header">
@@ -19,47 +21,84 @@
     </header>
     <nav>
         <div class="estilo_textnavegador">
-            <ul>
+            <ul class="gridnav">
                 <il><a href="index.html" class="pages">Inicio</a></il>
-                <il><a href="portafolio.html" class="pages">Portafolio</a></il> 
-                <il><a href="servicios.html" class="pages">Servicios</a></il>
-                <il><a href="testimonios.html" class="pages">Testimonios</a></il>
-                <il><a href="contacto.html" class="pages">Contacto</a></il>
+                <il><a href="pages/portafolio.html" class="pages">Portafolio</a></il> 
+                <il><a href="pages/servicios.html" class="pages">Servicios</a></il>
+                <il><a href="pages/testimonios.html" class="pages">Testimonios</a></il>
+                <il><a href="pages/contacto.html" class="pages">Contacto</a></il>
             </ul>
         </div>
     </nav>
-    <hr>
-    <main>
-        <section>
-            <article class="background_presentacion">
-                <img src="images/Producto.jpg" alt="cremasyanbal" class="size_imagesvert">
-                <br><p class="texto_articulos alineacion_central">Fotografía de producto de crema multiacción Totalist Jalea Real de Yanbal.</p>
-                <img src="images/Libre.jpg " alt="cocacola" class="size_imageshori"><br><p class="texto_articulos alineacion_central">Fotografía de producto Coca-Cola Sin Azúcar edición limitada Marshamello's.</p>
-                <img src="images/Retrato.jpg" alt="retratojulian" class="size_imagesvert"><br><p class="texto_articulos alineacion_central">Fotografía de retrato con enfoque artístico en fondo azul.</p>
-            </article>
-            <!--Texto Acerca de mi-->
-            <article class="texto_acerca alineacion_central">
-                <h1>Acerca de mi</h1><br><pa>Mi nombre es Johan, soy fotógrafo profesional con enfoque en fotografía de producto y retrato (artísticos, moda y empresariales).</p><br><img src="images/Autorretrato.jpg" alt="Autoretrato" id="size_imageautor">
-            </article>
+    <main class="container-fluid background_presentacion">
+        <section class="row ancho_contenedor">
+            <div class="col">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/Producto.jpg" class="d-block w-100 img-fluid" alt="cremasyanbal">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="parrafoscuro">
+                                <h5>Producto</h5>
+                                <p>Fotografía de producto de crema multiacción Totalist Jalea Real de Yanbal.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Libre.jpg" class="d-block w-100 img-fluid" alt="cocacola">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="parrafoscuro">
+                                <h5>Producto</h5>
+                                <p>Fotografía de producto Coca-Cola Sin Azúcar edición limitada Marshamello's.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Retrato.jpg" class="d-block w-100 img-fluid" alt="retratojulian">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="parrafoclaro">
+                                <h5>Retrato artístico</h5>
+                                <p>Fotografía de retrato con enfoque artístico en fondo azul.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </section>
     </main>
-    <hr>
-    <footer class="estilo_footer">
+    <article class="texto_acerca alineacion_central">
+        <h2>Acerca de mi</h2><pa>Mi nombre es Johan, soy fotógrafo profesional con enfoque en fotografía de producto y retrato (artísticos, moda y empresariales).</p><img src="images/Autorretrato.jpg" alt="Autoretrato" id="size_imageautor">
+    </article>
+    <footer class="estilo_footer gridpie">
         <div class="ubicacion">
             <p>Ubicación</p>
             <section class="contenedor_pie">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5206391411443!2d-74.11387508255616!3d4.6791797000000095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b6f9172599d%3A0x7a576281ecb7a749!2sCl.%2055%20%2378-73%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1663518093529!5m2!1sen!2sco" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div>
-                    <p class="texto_pie">Contactame</p>
-                    <div class="iconos_footer">
-                        <a href="https://www.instagram.com/indievidual5/" target="_blank"><img src="images/footer/instagram2x_0.png" alt="icono_insta" class="size_iconfoot"></a>
-                        <a href="https://www.facebook.com/Johan.Rodriguez67" target="_blank"><img src="images/footer/facebook2x_0.png" alt="icono_fb" class="size_iconfoot"></a>
-                        <a href="https://www.linkedin.com/in/johan-rodriguez-lopez-16bb31166/" target="_blank"><img src="images/footer/linkedin2x_0.png" alt="icono_linked" class="size_iconfoot"></a>
-                        <a href="https://wa.me/573163667303" target="_blank"><img src="images/footer/wp_3.png" alt="icono_wp" id="wp_icon"></a>
-                    </div>
-                    <p class="texto_pie">Fotografías tomadas y editadas por Johan Rodriguez</p>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5206391411443!2d-74.11387508255616!3d4.6791797000000095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b6f9172599d%3A0x7a576281ecb7a749!2sCl.%2055%20%2378-73%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1663518093529!5m2!1sen!2sco" class="img-fluid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
+        </div>
+        <div>
+            <p class="texto_pie">Contáctame</p>
+            <div class="iconos_footer">
+                <a href="https://www.instagram.com/indievidual5/" target="_blank"><img src="images/footer/instagram2x_0.png" alt="icono_insta" class="size_iconfoot"></a>
+                <a href="https://www.facebook.com/Johan.Rodriguez67" target="_blank"><img src="images/footer/facebook2x_0.png" alt="icono_fb" class="size_iconfoot"></a>
+                <a href="https://www.linkedin.com/in/johan-rodriguez-lopez-16bb31166/" target="_blank"><img src="images/footer/linkedin2x_0.png" alt="icono_linked" class="size_iconfoot"></a>
+                <a href="https://wa.me/573163667303" target="_blank"><img src="images/footer/wp_3.png" alt="icono_wp" id="wp_icon"></a>
+            </div>
+            <p class="texto_pie">Fotografías tomadas y editadas por Johan Rodriguez</p>
         </div>
     </footer>
 </body>
