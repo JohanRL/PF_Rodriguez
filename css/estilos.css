@@ -31,7 +31,7 @@
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 5px;
 }
 
@@ -51,7 +51,7 @@
     flex-direction: row;
     justify-content: center;
     background-color: black;
-    padding-top: 10px;
+    padding: 10px;
     height: 100%;
     color: darkgray;
 }
@@ -61,14 +61,12 @@
     flex-direction: column;
     background-color: black;
     padding: 10px;
-    height: 60vh;
 }
 
 .texto_servicios {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 5px;
-    
 }
 
 .size_imagesvert {
@@ -91,6 +89,7 @@
     padding: 5px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     font-size: 2vw;
 }
 
@@ -161,6 +160,21 @@ h2 {
     flex-wrap: wrap-reverse;
 }
 
+.grid_portafolio {
+    display: grid;
+    grid-template-areas:
+    "img img img"
+    "img img img";
+    grid-template-rows: repeat(3,3fr);
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.efectos_portafolio:hover {
+    box-shadow: #ff6f2f 0px 10px 10px 10px;
+}
+
 .aside_precios {
     display: flex;
     justify-content: flex-end;
@@ -179,11 +193,26 @@ h2 {
 .background_testimonios {
     background-color: black;
     padding: 50px;
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.caja_testimonio {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton_testimonio {
+    border-radius: 10%;
+    color: white;
+    background-color: gray;
+}
+
+.boton_testimonio:hover {
+    background-color: #ff6f2f;
+    color: black;
 }
 
 .parrafoscuro {
@@ -231,4 +260,9 @@ h2 {
     display: grid;
     grid-template-columns: repeat(5,20%);
     grid-template-rows: 100%;
+}
+
+main {
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
 }
