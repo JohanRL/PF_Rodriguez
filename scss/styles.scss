@@ -1,3 +1,7 @@
+@import "colores.scss";
+@import "estructura.scss";
+@import "tipografia";
+
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +21,7 @@
 
 .estilo_header {
     background: linear-gradient(0deg, black, #78787c);
-    padding-top: 10px;
+    padding-top: $espaciado;
     display: flex;
     justify-content: center;
 }
@@ -32,7 +36,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 3vw;
-    padding: 5px;
+    padding: $espaciado;
 }
 
 .estilo_footer {
@@ -51,7 +55,7 @@
     flex-direction: row;
     justify-content: center;
     background-color: black;
-    padding: 10px;
+    padding: $espaciado;
     height: 100%;
     color: darkgray;
 }
@@ -60,7 +64,7 @@
     display: flex;
     flex-direction: column;
     background-color: black;
-    padding: 10px;
+    padding: $espaciado;
 }
 
 .texto_servicios {
@@ -132,7 +136,7 @@ h2 {
 #wp_icon {
     height: 60%;
     width: 50%;
-    padding-left: 10px;
+    padding-left: $espaciado;
     padding-top: 5px;
 }
 
@@ -168,7 +172,7 @@ h2 {
     grid-template-rows: repeat(3,3fr);
     grid-template-columns: repeat(3,3fr);
     grid-gap: 15px;
-    padding: 10px;
+    padding: $espaciado;
 }
 
 .efectos_portafolio:hover {
@@ -183,11 +187,10 @@ h2 {
 .boton_servicios {
     color: white;
     text-decoration: none;
-}
-
-.boton_servicios:hover {
-    text-decoration: underline;
-    color: #ff6f2f;
+    &:hover {
+        text-decoration: underline;
+        color: #ff6f2f;
+    }
 }
 
 .background_testimonios {
@@ -206,13 +209,12 @@ h2 {
 
 .boton_testimonio {
     border-radius: 10%;
-    color: white;
+    color: $color_textoclaro;
     background-color: gray;
-}
-
-.boton_testimonio:hover {
-    background-color: #ff6f2f;
-    color: black;
+    &:hover {
+        background-color: #ff6f2f;
+        color: black;
+    }
 }
 
 .parrafoscuro {
@@ -220,7 +222,7 @@ h2 {
 }
 
 .parrafoclaro {
-    color: white;
+    color: $color_textoclaro;
 }
 
 .ancho_contenedor { 

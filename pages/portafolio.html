@@ -9,27 +9,52 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/icono/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icono/favicon-16x16.png">
     <link rel="manifest" href="images/icono/site.webmanifest">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <header>
-        <a href="../index.html" class="estilo_header">
-            <img src="../images/Logo blanco recortado.png" alt="Logoblanco" class="size_header">
-        </a>
-    </header>
-    <nav>
-        <div class="estilo_textnavegador">
-            <ul class="gridnav">
-                <il><a href="../index.html" class="pages">Inicio</a></il>
-                <il><a href="../pages/portafolio.html" class="pages">Portafolio</a></il> 
-                <il><a href="../pages/servicios.html" class="pages">Servicios</a></il>
-                <il><a href="../pages/testimonios.html" class="pages">Testimonios</a></il>
-                <il><a href="../pages/contacto.html" class="pages">Contacto</a></il>
-            </ul>
+        <div class="container-fluid bg-dark bg-gradient">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-dark bg-dark bg-gradient">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="../index.html"><img src="../images/Logo blanco recortado.png" alt="Logoblanco" class="size_header"></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">@indievidual5</h5>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../pages/portafolio.html">Portafolio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../pages/testimonios.html">Testimonios</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
         </div>
-    </nav>
+    </header>
     <main>
         <section class="container-fluid background_portafolio">
             <div class="row">

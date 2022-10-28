@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.pages {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center; }
+
+.pages:hover {
+  text-decoration: underline;
+  color: #ff6f2f; }
+
+.estilo_header {
+  background: linear-gradient(0deg, black, #78787c);
+  padding-top: 10px;
+  display: flex;
+  justify-content: center; }
+
+.size_header {
+  width: 60%;
+  height: auto; }
+
+.estilo_textnavegador {
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+  padding: 10px; }
+
+.estilo_footer {
+  background: linear-gradient(180deg, black, #ff6f2f);
+  color: gainsboro;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.ubicacion {
+  padding: 20px; }
+
+.background_presentacion {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+  height: 100%;
+  color: darkgray; }
+
+.background_servicios {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px; }
+
+.texto_servicios {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px; }
+
+.size_imagesvert {
+  width: 17%;
+  height: 80%; }
+
+.size_imageshori {
+  width: 35%;
+  height: 80%; }
+
+.alineacion_central {
+  text-align: center; }
+
+.texto_articulos {
+  color: darkgray;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2vw; }
+
+.texto_acerca {
+  background-color: black;
+  color: darkgray;
+  font-style: italic;
+  padding-bottom: 5px; }
+
+.contenedor_pie {
+  display: flex;
+  align-items: center; }
+
+.texto_pie {
+  padding-left: 50px;
+  padding-top: 50px; }
+
+h2 {
+  color: darkgray;
+  font-weight: bold;
+  padding: 5px;
+  background-color: black; }
+
+.iconos_footer {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+.size_iconfoot {
+  height: 80%;
+  width: 80%; }
+
+#wp_icon {
+  height: 60%;
+  width: 50%;
+  padding-left: 10px;
+  padding-top: 5px; }
+
+#size_imageautor {
+  width: 25%;
+  height: auto; }
+
+.form_align {
+  display: flex;
+  flex-direction: column;
+  padding: 5px; }
+
+.size_form {
+  width: 50%;
+  height: auto; }
+
+.background_portafolio {
+  background-color: black;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse; }
+
+.grid_portafolio {
+  display: grid;
+  grid-template-areas: "img img img" "img img img";
+  grid-template-rows: repeat(3, 3fr);
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 15px;
+  padding: 10px; }
+
+.efectos_portafolio:hover {
+  box-shadow: #ff6f2f 0px 10px 10px 10px; }
+
+.aside_precios {
+  display: flex;
+  justify-content: flex-end; }
+
+.boton_servicios {
+  color: white;
+  text-decoration: none; }
+  .boton_servicios:hover {
+    text-decoration: underline;
+    color: #ff6f2f; }
+
+.background_testimonios {
+  background-color: black;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.caja_testimonio {
+  display: flex;
+  flex-direction: column; }
+
+.boton_testimonio {
+  border-radius: 10%;
+  color: gainsboro;
+  background-color: gray; }
+  .boton_testimonio:hover {
+    background-color: #ff6f2f;
+    color: black; }
+
+.parrafoscuro {
+  color: black; }
+
+.parrafoclaro {
+  color: gainsboro; }
+
+.ancho_contenedor {
+  max-width: 1650px; }
+
+@media only screen and (max-width: 480px) {
+  .estilo_textnavegador {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 5px; }
+  .texto_acerca {
+    background-color: black;
+    color: darkgray;
+    font-style: italic;
+    padding-bottom: 5px;
+    font-size: 3vw; }
+  .estilo_footer {
+    background: linear-gradient(180deg, black, #ff6f2f);
+    color: gainsboro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw; }
+  .grid_portafolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; } }
+
+.gridpie {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.gridnav {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 100%; }
+
+main {
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray; }
