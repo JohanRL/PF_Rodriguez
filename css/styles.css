@@ -54,9 +54,18 @@
   padding: 10px; }
 
 .texto_servicios {
+  display: flex;
+  justify-content: center;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 5px; }
+  padding: 5px;
+  font-size: 1vw; }
+
+.titulos_servicios {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+  font-size: 2vw; }
 
 .size_imagesvert {
   width: 17%;
@@ -92,7 +101,7 @@
   padding-left: 50px;
   padding-top: 50px; }
 
-h2 {
+.titulo_presentacion {
   color: darkgray;
   font-weight: bold;
   padding: 5px;
@@ -144,10 +153,6 @@ h2 {
 
 .efectos_portafolio:hover {
   box-shadow: #ff6f2f 0px 10px 10px 10px; }
-
-.aside_precios {
-  display: flex;
-  justify-content: flex-end; }
 
 .boton_servicios {
   color: white;
@@ -211,11 +216,6 @@ h2 {
 .gridpie {
   display: grid;
   grid-template-columns: 50% 50%; }
-
-.gridnav {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: 100%; }
 
 main {
   border-top: 2px solid darkgray;
